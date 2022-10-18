@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/indexHouse.webp) no-repeat center center fixed;
+    background-size: cover;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+}
