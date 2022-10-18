@@ -4,9 +4,47 @@
     box-sizing: border-box;
 }
 body{
-    background: url(../images/indexHouse.webp) no-repeat center center fixed;
+    /* Streches image to viewport size. Works best with vector images */
+    background: url(../images/indexHouse.webp) no-repeat center center fixed; 
     background-size: cover;
 }
-.title{
-    font-family: 'Roboto', sans-serif;
+.nav-bar{
+    display: flex;
+    padding: 15px;
+    background-color: white;
+    font-family: 'Patrick Hand', cursive;
+    justify-content: space-evenly;
+    align-items: center;
 }
+.logo{
+    font-size: 2.7rem;
+    flex: 4;
+}
+.albums{
+ display: flex;
+ justify-content: space-evenly;
+}
+#zoey-logo, #dovey-logo, #sybi-logo, #group-logo{
+    flex: 1;
+    font-size: 2rem;
+}
+#zoey-link, #dovey-link, #sybi-link, #group-link{
+    text-decoration: none;
+    color: black;
+}
+a{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    border-radius: 10%;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;;
+}
+
+
+
+
