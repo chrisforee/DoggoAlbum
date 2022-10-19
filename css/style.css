@@ -8,6 +8,7 @@ body{
     background: url(../images/indexHouse.webp) no-repeat center center fixed; 
     background-size: cover;
 }
+
 .nav-bar{
     display: flex;
     padding: 15px;
@@ -25,12 +26,44 @@ body{
  justify-content: space-evenly;
 }
 #zoey-logo, #dovey-logo, #sybi-logo, #group-logo{
-    flex: 1;
+    flex: 2;
     font-size: 2rem;
+    text-align: center;
 }
 #zoey-link, #dovey-link, #sybi-link, #group-link{
     text-decoration: none;
     color: black;
+}
+#contact{
+    flex: 1;
+    text-align: center;
+}
+#selfie-container{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-row-1, .container-row-2, .container-row-3{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3rem;
+    color: black;
+    background:url(../images/woodFrame.jpeg);
+    border: 2px solid goldenrod;
+    box-shadow: 0px 0px 15px 10px white;
+    border-radius: 25%;
+    -webkit-text-stroke: 1px white;
+}
+.container-row-1:hover,.container-row-2:hover, .container-row-3:hover{
+    color: #fff;
+    box-shadow: 20px 20px 50px 15px white;
+}
+.image{
+    width: 320px;
+    height: 370px;
+    border: 10px double black;
+    border-radius: 50%;
 }
 a{
     box-shadow: inset 0 0 0 0 #54b3d6;
