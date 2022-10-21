@@ -90,8 +90,14 @@ a{
 .about-container{
     display: flex;
 }
+#content-container{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
 .content-container-row-1{
     text-align: center;
+    flex:1;
     padding: 50px;
     font-family: 'Patrick Hand', cursive;
     font-size: 3rem;
@@ -104,6 +110,7 @@ a{
 }
 .content-container-row-2{
     text-align: center;
+    flex: 2;
     padding: 50px;
     font-family: 'Patrick Hand', cursive;
     font-size: 3rem;
