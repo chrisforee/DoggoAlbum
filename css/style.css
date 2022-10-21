@@ -3,16 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+#index-body{
     /* Streches image to viewport size. Works best with vector images */
     background: url(../images/indexHouse.webp) no-repeat center center fixed; 
     background-size: cover;
 }
-
+/* ===============> index.html <=====================*/
 .nav-bar{
     display: flex;
     padding: 15px;
     background-color: white;
+    border-bottom: 1px solid black;
     font-family: 'Patrick Hand', cursive;
     justify-content: space-evenly;
     align-items: center;
@@ -22,15 +23,30 @@ body{
     flex: 4;
 }
 .albums{
- display: flex;
- justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 #zoey-logo, #dovey-logo, #sybi-logo, #group-logo{
     flex: 2;
     font-size: 2rem;
     text-align: center;
 }
-#zoey-link, #dovey-link, #sybi-link, #group-link{
+a{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    border-radius: 10%;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+#zoey-nav-link:hover, #dovey-nav-link:hover, #sybi-nav-link:hover, 
+#group-nav-link:hover, #contact-nav-link:hover{
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;;
+}
+#zoey-nav-link, #dovey-nav-link, #sybi-nav-link, 
+#group-nav-link, #contact-nav-link, #zoey-selfie-link, 
+#dovey-selfie-link, #sybi-selfie-link{
     text-decoration: none;
     color: black;
 }
@@ -45,11 +61,11 @@ body{
 }
 .container-row-1, .container-row-2, .container-row-3{
     text-align: center;
-    padding: 10px;
+    padding: 50px;
     font-family: 'Patrick Hand', cursive;
     font-size: 3rem;
     color: black;
-    background:url(../images/woodFrame.jpeg);
+    background:url(../images/lightWoodFrame.webp);
     border: 2px solid goldenrod;
     box-shadow: 0px 0px 15px 10px white;
     border-radius: 25%;
@@ -65,19 +81,38 @@ body{
     border: 10px double black;
     border-radius: 50%;
 }
-a{
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    border-radius: 10%;
-    color: #54b3d6;
-    padding: 0 .25rem;
-    margin: 0 -.25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+/* ==============> zoey.html <======================*/
+#zoey-body{
+        /* Streches image to viewport size. Works best with vector images */
+        background: url(../images/zoeyRoom.webp) no-repeat center center fixed; 
+        background-size: cover;
 }
-a:hover {
-    color: #fff;
-    box-shadow: inset 200px 0 0 0 #54b3d6;;
+.about-container{
+    display: flex;
 }
-
-
+.content-container-row-1{
+    text-align: center;
+    padding: 50px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3rem;
+    color: black;
+    background:url(../images/lightWoodFrame.webp);
+    border: 2px solid goldenrod;
+    box-shadow: 0px 0px 15px 10px white;
+    border-radius: 25%;
+    -webkit-text-stroke: 1px white;
+}
+.content-container-row-2{
+    text-align: center;
+    padding: 50px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3rem;
+    color: black;
+    background:url(../images/lightWoodFrame.webp);
+    border: 2px solid goldenrod;
+    box-shadow: 0px 0px 15px 10px white;
+    border-radius: 25%;
+    -webkit-text-stroke: 1px white;
+}
 
 
